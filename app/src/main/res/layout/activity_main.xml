@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".signup"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:text="Lets get started !"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txt9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an account to avail all features"
+        android:textSize="20dp"
+        android:layout_below="@id/txt8"
+        android:layout_marginLeft="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+        <EditText
+            android:id="@+id/et7"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="60dp"
+            android:width="350dp"
+            android:background="@drawable/et_style"
+            android:drawableLeft="@mipmap/user64"
+            android:drawablePadding="20dp"
+            android:ems="10"
+            android:hint="Name"
+            android:padding="10dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et8"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/et7"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="27dp"
+            android:width="350dp"
+            android:background="@drawable/et_style"
+            android:drawableLeft="@mipmap/email"
+            android:drawablePadding="20dp"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et9"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/et8"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/et_style"
+            android:drawableLeft="@mipmap/telephone"
+            android:drawablePadding="20dp"
+            android:hint="Phone Number"
+            android:padding="10dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et10"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/et9"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/et_style"
+            android:drawableLeft="@mipmap/padlock"
+            android:drawablePadding="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et11"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/et10"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/et_style"
+            android:drawableLeft="@mipmap/padlock"
+            android:drawablePadding="20dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et11"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/et_style"
+            android:text="Signup"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/txt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="37dp"
+            android:text="Already have an account?"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="37dp"
+            android:layout_toRightOf="@+id/txt10"
+            android:clickable="true"
+            android:text="Login"
+            android:textColor="#3d6cf0"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</LinearLayout>
