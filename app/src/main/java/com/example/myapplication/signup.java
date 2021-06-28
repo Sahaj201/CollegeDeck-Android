@@ -1,13 +1,14 @@
 package com.example.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class signup extends AppCompatActivity {
+
+public class signup extends homepage {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-}
+
+    }

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FEC8D8">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_weight="0.3"
+        android:text="Log in!"
+        android:textColor="#7868E6"
+        android:background="#FEC8D8"
+        android:textSize="30dp"
+        android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/view_pager_main"
+        android:layout_weight="1"
+        android:outlineAmbientShadowColor="@color/black"
+        tools:ignore="MissingClass">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="#FEC8D8"
+        >
+
+        <!--<ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/back3" /> -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:textColor="#7868E6"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter you username"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:background="@drawable/et_style"
+            android:layout_marginRight="5dp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#7868E6"
+            android:drawableLeft="@drawable/ic_baseline_keyboard_24"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:hint="Enter your password"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/et_style"
+            android:layout_marginRight="5dp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#7868E6"
+            android:layout_below="@+id/editTextTextPassword" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login with Facebook"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#255C99"
+            android:layout_below="@+id/button" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login with Google"
+            android:layout_marginTop="5dp"
+            android:backgroundTint=" #CC0000"
+            android:layout_below="@+id/button3"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FEC8D8">
+     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dont have account?"
+        android:textSize="20dp"
+        android:layout_marginLeft="120dp"
+        android:background="#FEC8D8"
+        android:layout_weight="0.05"/>
+
+     <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="20dp"
+         android:layout_marginLeft="170dp"
+        android:textColor="#0000FF"
+        android:clickable="true"
+        android:background="#FEC8D8"
+        android:layout_weight="0.05"/>  <!-- Make onclicklistner for this text view and redirect it to signup page -->
+    </LinearLayout>
+</LinearLayout>
