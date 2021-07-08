@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lawcolleges"
+    android:orientation="vertical"
+    android:background="#D9F2FE">
+    <include layout="@layout/toolbar"
+        android:id="@+id/cust_toolbar2"/>
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Top 10 Law Colleges "
+        android:textSize="30dp"
+        android:textColor="@color/purple_200"
+        android:background="@color/purple_700"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="1. NLSIU Bangalore - National Law School of India University"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button182"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button192"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button182"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button202"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Course and Fee"
+                        android:layout_toRightOf="@+id/button192"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button212"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Placements "
+                        android:layout_below="@+id/button182"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="2. NLU Delhi - National Law University"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button222"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button232"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button222"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button242"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Course and Fee "
+                        android:layout_toRightOf="@+id/button232"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button252"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Placements "
+                        android:layout_below="@+id/button222"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="3. NLU Hyderabad - NALSAR University of Law"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button262"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button272"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button262"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button282"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button272"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button292"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button262"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="4. IIT Kharagpur LAW - Rajiv Gandhi School of Intellectual Property Law Indian Institute of Technology
+"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button302"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button312"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button302"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button322"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button312"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button332"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button302"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="5. Jindal Global Law School, Sonipat"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button342"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button352"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button342"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button362"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button352"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button372"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button362"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="6. GNLU Gandhinagar - Gujarat National Law University
+"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button382"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button392"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button382"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button402"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button392"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button412"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button382"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="7. JMI New Delhi - Jamia Millia Islamia"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button422"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button432"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button422"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button442"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button432"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button452"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button422"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="8. RGNUL Patiala - Rajiv Gandhi National University of Law
+"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button462"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button472"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button462"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button482"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button472"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button492"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button462"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="9. NUJS Kolkata - The West Bengal National University of Juridical Sciences
+"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button502"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button512"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button502"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button522"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button512"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button532"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button522"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="10. Faculty of Law DU - Faculty of Law University of Delhi
+"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button542"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button552"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button542"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button562"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button552"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button572"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button542"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

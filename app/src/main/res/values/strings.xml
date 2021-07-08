@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">CollegeDeck</string>
+    <string name="title_activity_navigation_main">navigation_main</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="engineer">TOP 10 ENGINEERING COLLEGES</string>
+    <string name="mba">TOP 10 MBA COLLEGES</string>
+    <string name="medical">TOP 10 MEDICAL COLLEGES</string>
+    <string name="law">TOP 10 LAW COLLEGES</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>

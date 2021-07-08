@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mbacolleges"
+    android:orientation="vertical"
+    android:background="#D9F2FE">
+    <include layout="@layout/toolbar"
+        android:id="@+id/cust_toolbar3"/>
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Top 10 MBA Colleges "
+        android:textSize="30dp"
+        android:textColor="@color/purple_200"
+        android:background="@color/purple_700"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="1. IIM Ahmedabad - Indian Institute of Management"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button181"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button191"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button181"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button201"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Course and Fee"
+                        android:layout_toRightOf="@+id/button191"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button211"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Placements "
+                        android:layout_below="@+id/button181"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="2. IIM Bangalore - Indian Institute of Management"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button221"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button231"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button221"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button241"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Course and Fee "
+                        android:layout_toRightOf="@+id/button231"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button251"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Placements "
+                        android:layout_below="@+id/button221"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="3. IIM Indore - Indian Institute of Management"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button261"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button271"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button261"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button281"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button271"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button291"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button261"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="4. IIM Calcutta - Indian Institute of Management"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button301"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button311"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button301"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button321"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button311"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button331"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button301"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="5. XLRI Jamshedpur - XLRI-Xavier School of Management"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button341"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button351"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button341"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button361"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button351"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button371"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button361"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="6. FMS Delhi - Faculty of Management Studies University of Delhi
+"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button381"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button391"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button381"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button401"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button391"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button411"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button381"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="7. IIM Kozhikode - Indian Institute of Management"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button421"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button431"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button421"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button441"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button431"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button451"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button421"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="8. IIM Lucknow - Indian Institute of Management"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button461"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button471"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button461"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button481"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button471"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button491"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button461"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="9.MDI Gurgaon - Management Development Institute"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button501"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button511"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button501"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button521"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button511"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button531"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button521"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="10. NITIE Mumbai - National Institute of Industrial Engineering"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button541"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button551"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button541"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button561"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button551"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button571"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button541"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

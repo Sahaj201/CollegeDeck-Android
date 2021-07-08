@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medicalcolleges"
+    android:orientation="vertical"
+    android:background="#D9F2FE">
+    <include layout="@layout/toolbar"
+        android:id="@+id/cust_toolbar4"/>
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Top 10 Medical Colleges "
+        android:textSize="30dp"
+        android:textColor="@color/purple_200"
+        android:background="@color/purple_700"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="1. AIIMS Delhi - All India Institute of Medical Sciences New
+"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button183"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button193"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button183"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button203"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Course and Fee"
+                        android:layout_toRightOf="@+id/button193"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button213"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Placements "
+                        android:layout_below="@+id/button183"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="2. PGIMER Chandigarh - Postgraduate Institute of Medical Education and Research"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button223"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button233"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button223"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button243"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Course and Fee "
+                        android:layout_toRightOf="@+id/button233"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button253"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Placements "
+                        android:layout_below="@+id/button223"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="3. CMC Vellore - Christian Medical College"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button263"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button273"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button263"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button283"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button273"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button293"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button263"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="4. NIMHANS Bangalore - National Institute of Mental Health and Neuro Sciences"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button303"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button313"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button303"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button323"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button313"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button333"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button303"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="5. SGPGI Lucknow - Sanjay Gandhi Postgraduate Institute of Medical Sciences"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button343"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button353"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button343"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button363"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button353"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button373"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button363"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="6. BHU Varanasi - Banaras Hindu University"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button383"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button393"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button383"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button403"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button393"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button413"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button383"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="7. Amrita Vishwa Vidyapeetham, Coimbatore"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button423"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button433"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button423"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button443"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button433"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button453"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button423"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="8. JIPMER Puducherry - Jawaharlal Institute of Postgraduate Medical Education and Research"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button463"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button473"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button463"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button483"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button473"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button493"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button463"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="9. KMC Manipal - Kasturba Medical College"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button503"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button513"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button503"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button523"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button513"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button533"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button523"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="10. KGMU Lucknow - King George's Medical University"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Ownership : Public/Government"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button543"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button553"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CutOff"
+                        android:layout_toRightOf="@+id/button543"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button563"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Course and Fee "
+                        android:layout_toRightOf="@+id/button553"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                    <Button
+                        android:id="@+id/button573"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placements"
+                        android:layout_below="@+id/button543"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/et_style2"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
