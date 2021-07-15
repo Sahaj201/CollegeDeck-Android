@@ -64,7 +64,7 @@ public class entermobile extends AppCompatActivity {
                                     @Override
                                     public void onVerificationFailed(@NotNull FirebaseException e) {
                                         ppb.setVisibility(View.GONE);
-                                        b1.setVisibility(View.INVISIBLE);
+                                        b1.setVisibility(View.VISIBLE);
                                         Toast.makeText(entermobile.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                                     }
 
@@ -77,6 +77,7 @@ public class entermobile extends AppCompatActivity {
                                         x.putExtra("name",usnm);  //user name passed
                                         x.putExtra("backotp",backotp);   //this is the sent otp, and we will check it with the entered otp for verification
                                         startActivity(x);           //after sending otp , we are redirecting to verification page
+                                        finish();
                                     }
                                 }
                         );

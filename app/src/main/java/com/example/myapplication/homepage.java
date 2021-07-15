@@ -6,6 +6,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,6 +37,7 @@ public class homepage extends AppCompatActivity {
     TextView txt1,fb;
     EditText usnm,ps;
     String em,pass;
+    ProgressBar ppbb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,7 @@ public class homepage extends AppCompatActivity {
         usnm=findViewById(R.id.editTextTextPersonName);
         ps=findViewById(R.id.editTextTextPassword);
         fb=findViewById(R.id.fgt_psd);
+        ppbb=findViewById(R.id.login_pgbar);
 
 
         txt1.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +66,8 @@ public class homepage extends AppCompatActivity {
             public void onClick(View v) {
                 em=usnm.getText().toString();
                 pass=ps.getText().toString();
+                ppbb.setVisibility(View.VISIBLE);
+                btn1.setVisibility(View.INVISIBLE);
                 fb1.collection("Users").document(em).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -81,16 +86,22 @@ public class homepage extends AppCompatActivity {
                         }
                         else
                         {
+                            ppbb.setVisibility(View.GONE);
+                            btn1.setVisibility(View.VISIBLE);
                             Toast.makeText(homepage.this, "Wrong details", Toast.LENGTH_SHORT).show();
                         }
                     }
                     else
                     {
+                        ppbb.setVisibility(View.GONE);
+                        btn1.setVisibility(View.VISIBLE);
                         Toast.makeText(homepage.this, "No such account exists!", Toast.LENGTH_SHORT).show();
                     }}
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
+                        ppbb.setVisibility(View.GONE);
+                        btn1.setVisibility(View.VISIBLE);
                         Toast.makeText(homepage.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });

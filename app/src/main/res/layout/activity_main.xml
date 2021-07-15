@@ -169,18 +169,31 @@
                 />
         </RadioGroup>
 
-        <Button
-            android:id="@+id/nutton5"
-            android:layout_width="wrap_content"
+        <FrameLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:textColor="#1B2441"
-            android:layout_gravity="center"
-            android:backgroundTint="#01ADC4"
-            android:background="@drawable/et_style"
-            android:text="Signup"
-            android:textSize="30dp"
-            android:padding="5dp"/>
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/nutton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#1B2441"
+                android:layout_gravity="center"
+                android:backgroundTint="#01ADC4"
+                android:background="@drawable/et_style"
+                android:text="Signup"
+                android:textSize="30dp"
+                android:padding="5dp"/>
+            <ProgressBar android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:id="@+id/signup_pgbar"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
     </LinearLayout>
        <LinearLayout
            android:layout_width="match_parent"

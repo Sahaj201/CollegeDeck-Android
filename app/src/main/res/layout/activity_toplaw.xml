@@ -43,46 +43,6 @@
                     android:text="     Ownership : Public/Government"
                     android:textSize="20dp" />
 
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:id="@+id/button182"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Admission"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button192"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CutOff"
-                        android:layout_toRightOf="@+id/button182"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button202"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Course and Fee"
-                        android:layout_toRightOf="@+id/button192"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button212"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" Placements "
-                        android:layout_below="@+id/button182"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -100,48 +60,6 @@
                     android:layout_height="wrap_content"
                     android:text="     Ownership : Public/Government"
                     android:textSize="20dp" />
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:id="@+id/button222"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Admission"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button232"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CutOff"
-                        android:layout_toRightOf="@+id/button222"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button242"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Course and Fee "
-                        android:layout_toRightOf="@+id/button232"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button252"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" Placements "
-                        android:layout_below="@+id/button222"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -160,47 +78,7 @@
                     android:text="     Ownership : Public/Government"
                     android:textSize="20dp" />
 
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:id="@+id/button262"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Admission"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button272"
 
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CutOff"
-                        android:layout_toRightOf="@+id/button262"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button282"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" Course and Fee "
-                        android:layout_toRightOf="@+id/button272"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button292"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Placements"
-                        android:layout_below="@+id/button262"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -220,47 +98,6 @@
                     android:text="     Ownership : Public/Government"
                     android:textSize="20dp" />
 
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:id="@+id/button302"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Admission"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button312"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CutOff"
-                        android:layout_toRightOf="@+id/button302"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button322"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" Course and Fee "
-                        android:layout_toRightOf="@+id/button312"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button332"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Placements"
-                        android:layout_below="@+id/button302"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -279,47 +116,6 @@
                     android:text="     Ownership : Public/Government"
                     android:textSize="20dp" />
 
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:id="@+id/button342"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Admission"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button352"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CutOff"
-                        android:layout_toRightOf="@+id/button342"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button362"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" Course and Fee "
-                        android:layout_toRightOf="@+id/button352"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button372"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Placements"
-                        android:layout_below="@+id/button362"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -339,47 +135,6 @@
                     android:text="     Ownership : Public/Government"
                     android:textSize="20dp" />
 
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:id="@+id/button382"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Admission"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button392"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CutOff"
-                        android:layout_toRightOf="@+id/button382"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button402"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" Course and Fee "
-                        android:layout_toRightOf="@+id/button392"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button412"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Placements"
-                        android:layout_below="@+id/button382"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -397,48 +152,6 @@
                     android:layout_height="wrap_content"
                     android:text="     Ownership : Public/Government"
                     android:textSize="20dp" />
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:id="@+id/button422"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Admission"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button432"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CutOff"
-                        android:layout_toRightOf="@+id/button422"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button442"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" Course and Fee "
-                        android:layout_toRightOf="@+id/button432"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button452"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Placements"
-                        android:layout_below="@+id/button422"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -457,48 +170,6 @@
                     android:layout_height="wrap_content"
                     android:text="     Ownership : Public/Government"
                     android:textSize="20dp" />
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:id="@+id/button462"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Admission"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button472"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CutOff"
-                        android:layout_toRightOf="@+id/button462"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button482"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" Course and Fee "
-                        android:layout_toRightOf="@+id/button472"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button492"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Placements"
-                        android:layout_below="@+id/button462"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -517,48 +188,6 @@
                     android:layout_height="wrap_content"
                     android:text="     Ownership : Public/Government"
                     android:textSize="20dp" />
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:id="@+id/button502"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Admission"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button512"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CutOff"
-                        android:layout_toRightOf="@+id/button502"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button522"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" Course and Fee "
-                        android:layout_toRightOf="@+id/button512"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button532"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Placements"
-                        android:layout_below="@+id/button522"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -577,50 +206,7 @@
                     android:layout_height="wrap_content"
                     android:text="     Ownership : Public/Government"
                     android:textSize="20dp" />
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:id="@+id/button542"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Admission"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button552"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CutOff"
-                        android:layout_toRightOf="@+id/button542"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button562"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" Course and Fee "
-                        android:layout_toRightOf="@+id/button552"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                    <Button
-                        android:id="@+id/button572"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Placements"
-                        android:layout_below="@+id/button542"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="22dp"
-                        android:background="@drawable/et_style2"/>
-                </RelativeLayout>
             </LinearLayout>
-
 
         </LinearLayout>
     </ScrollView>

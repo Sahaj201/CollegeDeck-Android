@@ -178,11 +178,31 @@ public class ui_back extends AppCompatActivity implements NavigationView.OnNavig
                 logout();
                 break;
 
+            case R.id.cust_abtus:
+                dialog();
+                break;
+
         }
 
 
         dl.closeDrawer(GravityCompat.START);   //this will close the drawer after we select any option from drawer
         return true;     //on clicking items in menu , it should return true
+    }
+
+    private void dialog() {
+        final AlertDialog.Builder bld=new AlertDialog.Builder(ui_back.this);
+        View mView = getLayoutInflater().inflate(R.layout.aboutus_dialog,null);
+        bld.setView(mView);
+        final AlertDialog ad= bld.create();
+        //Button bb=ad.findViewById(R.id.abtsbt_but);
+        ad.setCanceledOnTouchOutside(true);
+        /*bb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ad.dismiss();
+            }
+        });*/
+        ad.show();
     }
 
     private void logout() {

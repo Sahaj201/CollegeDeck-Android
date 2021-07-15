@@ -97,6 +97,7 @@ public class verifyotp extends AppCompatActivity {
                                                             Toast.makeText(verifyotp.this, "Password changed successfully", Toast.LENGTH_SHORT).show();
                                                             Intent y=new Intent(getApplicationContext(),homepage.class);
                                                             startActivity(y);
+                                                            finish();
                                                         }
                                                     }).addOnFailureListener(new OnFailureListener() {
                                                         @Override

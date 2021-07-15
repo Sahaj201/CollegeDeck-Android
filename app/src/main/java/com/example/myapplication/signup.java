@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +30,7 @@ public class signup extends homepage {
     String emaill, pno, pss, cpss;
     Button btn2;
     TextView lgp;
+    ProgressBar op;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +43,14 @@ public class signup extends homepage {
         passs = findViewById(R.id.et11);
         btn2=findViewById(R.id.nutton5);
         lgp=findViewById(R.id.abcde);
+        op=findViewById(R.id.signup_pgbar);
         fb = FirebaseFirestore.getInstance();
         fa=FirebaseAuth.getInstance();
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                op.setVisibility(View.VISIBLE);
+                btn2.setVisibility(View.INVISIBLE);
                 nm = name.getText().toString();
                 emaill = email.getText().toString();
                 pno = phoneno.getText().toString();
@@ -64,15 +69,21 @@ public class signup extends homepage {
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
+                                op.setVisibility(View.GONE);
+                                btn2.setVisibility(View.VISIBLE);
                                 Toast.makeText(signup.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
                             }
                         });
                     }
                     else
                     {
+                        op.setVisibility(View.GONE);
+                        btn2.setVisibility(View.VISIBLE);
                         Toast.makeText(signup.this, "Password doesn't match", Toast.LENGTH_SHORT).show();
                     }
                 } else {
+                    op.setVisibility(View.GONE);
+                    btn2.setVisibility(View.VISIBLE);
                     Toast.makeText(signup.this, "Enter the details!", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -96,7 +107,7 @@ public class signup extends homepage {
                 Toast.makeText(signup.this, "Signed up successfully", Toast.LENGTH_SHORT).show();
                 Intent intent1 = new Intent(getApplicationContext(), homepage.class);
                 startActivity(intent1);
-
+                finish();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

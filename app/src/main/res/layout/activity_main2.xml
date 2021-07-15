@@ -99,17 +99,29 @@
         android:textAlignment="center"
         android:gravity="center"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Log In"
-        android:background="@drawable/et_style"
-        android:layout_marginTop="40dp"
-        android:textStyle="bold"
-        android:textColor="#1B2441"
-        android:backgroundTint="#01ADC4"
-        android:layout_below="@+id/editTextTextPassword" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:textColor="#1B2441"
+                android:backgroundTint="#01ADC4"
+                android:layout_below="@+id/editTextTextPassword" />
+
+            <ProgressBar android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:id="@+id/login_pgbar"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -144,6 +156,7 @@
     android:layout_height="wrap_content"
     android:text="Dont have account?"
     android:textSize="20dp"
+     android:textStyle="bold"
      android:layout_gravity="center_horizontal"
     android:textAlignment="center"
      android:textColor="@color/black"
@@ -151,6 +164,7 @@
 
  <TextView
     android:id="@+id/textView5"
+     android:textStyle="bold"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Sign Up"
