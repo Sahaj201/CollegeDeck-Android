@@ -14,6 +14,6 @@ public class medicalcolleges extends AppCompatActivity {
 
         tlb4=findViewById(R.id.cust_toolbar4);
         setSupportActionBar(tlb4);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);   //for adding back button in toolbar
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);   //for adding back button in toolbar
     }
 }

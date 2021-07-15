@@ -28,10 +28,12 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
+import org.jetbrains.annotations.NotNull;
+
 public class homepage extends AppCompatActivity {
     FirebaseFirestore fb1;
     Button btn1;
-    TextView txt1;
+    TextView txt1,fb;
     EditText usnm,ps;
     String em,pass;
 
@@ -44,6 +46,7 @@ public class homepage extends AppCompatActivity {
         txt1 = findViewById(R.id.textView5);
         usnm=findViewById(R.id.editTextTextPersonName);
         ps=findViewById(R.id.editTextTextPassword);
+        fb=findViewById(R.id.fgt_psd);
 
 
         txt1.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +54,7 @@ public class homepage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent2=new Intent(homepage.this,signup.class);
                 startActivity(intent2);
+                finish();
             }
         });
 
@@ -73,6 +77,7 @@ public class homepage extends AppCompatActivity {
                             Intent intent3=new Intent(getApplicationContext(),ui_back.class);
                             intent3.putExtra("name",fn);
                             startActivity(intent3);
+                            finish();
                         }
                         else
                         {
@@ -90,6 +95,36 @@ public class homepage extends AppCompatActivity {
                     }
                 });
 
+            }
+        });
+        fb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String ee=usnm.getText().toString();
+                if(ee.isEmpty())
+                {
+                    Toast.makeText(homepage.this, "Please enter username!", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    fb1.collection("Users").document(ee).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                        @Override
+                        public void onSuccess(DocumentSnapshot documentSnapshot) {
+                            if (documentSnapshot.exists()) {
+                                UserDataR us = documentSnapshot.toObject(UserDataR.class);
+                                String phn = us.getPhone();
+                                Intent abc = new Intent(getApplicationContext(), entermobile.class);
+                                abc.putExtra("phone", phn);
+                                abc.putExtra("name",ee);
+                                startActivity(abc);
+                            }
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(homepage.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
             }
         });
     }

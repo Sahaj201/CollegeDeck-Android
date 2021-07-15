@@ -20,6 +20,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <activity android:name=".editprofile"
+            android:label="@string/edit_profile"
+            android:parentActivityName=".ui_back"/>
+        <activity android:name=".verifyotp" />
+        <activity android:name=".entermobile" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,25 +32,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".homepage"></activity>
-        <activity android:name=".college_java"></activity>
-        <activity android:name=".lawcolleges"
+        <activity android:name=".homepage" />
+        <activity android:name=".college_java"
+            android:parentActivityName=".ui_back"
+            android:label="@string/college"/>
+        <activity
+            android:name=".lawcolleges"
             android:label="@string/law"
-            android:parentActivityName=".ui_back"/>
-        <activity android:name=".mbacolleges"
+            android:parentActivityName=".ui_back" />
+        <activity
+            android:name=".mbacolleges"
             android:label="@string/mba"
-            android:parentActivityName=".ui_back"/>
-        <activity android:name=".engineeringcolleges"
+            android:parentActivityName=".ui_back" />
+        <activity
+            android:name=".engineeringcolleges"
             android:label="@string/engineer"
-            android:parentActivityName=".ui_back"/>
-        <activity android:name=".medicalcolleges"
+            android:parentActivityName=".ui_back" />
+        <activity
+            android:name=".medicalcolleges"
             android:label="@string/medical"
-            android:parentActivityName=".ui_back"/>
-        <activity android:name=".ui_back">
-        </activity>
+            android:parentActivityName=".ui_back" />
+        <activity android:name=".ui_back" />
         <activity
             android:name=".signup"
-            tools:ignore="Instantiatable"></activity>
+            tools:ignore="Instantiatable" />
     </application>
 
 </manifest>

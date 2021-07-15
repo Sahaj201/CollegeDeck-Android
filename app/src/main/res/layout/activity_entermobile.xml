@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout android:background="#D9F2FE"
+    tools:context=".entermobile"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:background="#1B2441"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <ImageView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/mob"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#D9F2FE"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Enter Mobile number"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="#01ADC4"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="We will send you a OTP on this mobile number."
+        android:layout_marginBottom="80dp"
+        android:textAlignment="center"/>
+
+</LinearLayout>
+
+    <LinearLayout android:background="@drawable/et_style4"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/l1">
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        android:text=" India"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/india"/>
+    <TableRow android:background="#444"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:id="@+id/hr"/>
+
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="+91"/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:id="@+id/mobno"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:hint="* * * * * * * * * *"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <FrameLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/l1">
+
+        <Button android:background="@drawable/et_style5"
+            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:textColor="#01ADC4"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Get Otp"
+            android:id="@+id/getotp"
+            android:layout_gravity="center"/>
+        <ProgressBar android:layout_height="35dp"
+            android:layout_width="35dp"
+            android:id="@+id/send_otp_pgbar"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+</FrameLayout>
+
+</RelativeLayout>

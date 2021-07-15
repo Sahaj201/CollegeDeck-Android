@@ -14,6 +14,6 @@ public class lawcolleges extends AppCompatActivity {
 
         tlb2=findViewById(R.id.cust_toolbar2);
         setSupportActionBar(tlb2);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);   //for adding back button in toolbar
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);   //for adding back button in toolbar
     }
 }

@@ -17,7 +17,7 @@ public class engineeringcolleges extends AppCompatActivity {
 
         tlb1=findViewById(R.id.cust_toolbar1);
         setSupportActionBar(tlb1);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);   //for adding back button in toolbar
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);   //for adding back button in toolbar
         //tlb1.setTitle(R.string.engineer);
     }
 }

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -27,6 +28,7 @@ public class signup extends homepage {
     String nm;
     String emaill, pno, pss, cpss;
     Button btn2;
+    TextView lgp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class signup extends homepage {
         pass = findViewById(R.id.et10);
         passs = findViewById(R.id.et11);
         btn2=findViewById(R.id.nutton5);
+        lgp=findViewById(R.id.abcde);
         fb = FirebaseFirestore.getInstance();
         fa=FirebaseAuth.getInstance();
         btn2.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +77,16 @@ public class signup extends homepage {
                 }
             }
         });
+        lgp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent log=new Intent(signup.this,homepage.class);
+                startActivity(log);
+                finish();
+            }
+        });
+
+
     }
     private void addDataToFirestore(String nmm, String eml, String phone, String password) {
         UserDataR user = new UserDataR(nmm, eml, phone, password);

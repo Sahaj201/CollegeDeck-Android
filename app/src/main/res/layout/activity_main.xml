@@ -195,6 +195,7 @@
             android:text="Already have an account?"
             android:textColor="@color/black"
             android:textSize="20dp"
+            android:textStyle="bold"
             />
 
         <TextView
@@ -203,6 +204,8 @@
             android:gravity="center"
             android:clickable="true"
             android:text="Login"
+            android:id="@+id/abcde"
+            android:textStyle="bold"
             android:textColor="#A8151C"
             android:textSize="20dp" />
     </LinearLayout>

@@ -2,24 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:background="#01ADC4"
     android:gravity="top"
     android:padding="10dp">
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/logo_transparent"/>
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:fontFamily="@font/aclonica"
-        android:text="Welcome"
-        android:textColor="@color/black"
-        android:textSize="20dp" />
+        android:orientation="vertical">
 
-
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_transparent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Hello,"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:gravity="start"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/usrnm"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
 </LinearLayout>

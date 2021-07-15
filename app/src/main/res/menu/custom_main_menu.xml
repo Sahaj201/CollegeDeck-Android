@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single"> <!--means only single item can be clicked at one time-->
+    <group > <!--means only single item can be clicked at one time-->
 
         <item
             android:id="@+id/custom_nav_home"
             android:icon="@drawable/navhomeicon"
             android:title="Home" />
-        <item
+        <!--<item
             android:id="@+id/custom_nav_rank"
             android:icon="@drawable/ranking"
             android:title="Rankings" />
         <item
             android:id="@+id/custom_nav_exams"
             android:icon="@drawable/exam"
-            android:title="Exams" />
+            android:title="Exams" />-->
 
     </group>
 
         <item android:title="Profile">
             <menu>
-                <group android:checkableBehavior="single">
+                <group >
 
                 <item
                     android:id="@+id/custom_navprof"
@@ -39,7 +39,7 @@
         <menu>
 
             <item android:id="@+id/cust_talk"
-                android:title="Talk to us"
+                android:title="Feedback"
                 android:icon="@drawable/share"/>
             <item android:id="@+id/cust_abtus"
                 android:title="About us"

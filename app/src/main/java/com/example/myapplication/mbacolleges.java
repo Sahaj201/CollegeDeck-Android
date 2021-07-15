@@ -14,6 +14,6 @@ public class mbacolleges extends AppCompatActivity {
 
         tlb3=findViewById(R.id.cust_toolbar3);
         setSupportActionBar(tlb3);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);   //for adding back button in toolbar
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);   //for adding back button in toolbar
     }
 }
