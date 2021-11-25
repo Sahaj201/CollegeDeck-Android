@@ -41,7 +41,24 @@
                     android:queryHint="Search for Colleges here"
                     android:id="@+id/search_cllg"
                     android:iconifiedByDefault="false"/>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/listsug"
+                    android:visibility="gone" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/get_help"
+                    android:text="Get Help"
+                    android:textSize="15dp"
+                    android:textColor="#6D6969"
+                    android:drawableLeft="@drawable/ic_outline_help_24"
+                    android:drawablePadding="3dp"
+                    android:clickable="true"
+                    android:layout_marginTop="10dp"/>
                 <!--<RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -83,7 +100,7 @@
                 <ViewFlipper
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:autoStart="true"
                     android:flipInterval="2000">
 
@@ -124,7 +141,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/box"
-                    android:layout_marginTop="10dp">
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -195,128 +213,51 @@
                         android:text="TOP MEDICAL COLLEGES IN INDIA"
                         />
                 </RelativeLayout>
-                <RelativeLayout
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:background="@drawable/box"
-                    android:layout_marginTop="10dp">
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="EXAMS"
+                        android:text="CONFUSED WITH YOUR CHOICES?"
                         android:layout_marginTop="10dp"
                         android:textStyle="bold"
                         android:textSize="30dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
                         android:textColor="#47146C"
                         android:id="@+id/txt_head2"
-                        android:drawableLeft="@drawable/mortarboard22"
-                        android:drawablePadding="10dp"
-                        android:layout_centerHorizontal="true"/>
+
+                        android:drawableLeft="@drawable/mortarboard22"/>
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Easy Information and downloads on exam preparation, dates, counselling, syllabus and more"
+                        android:text="We know selecting college is a tough job and we are here to help you with that! Click here to compare colleges on basis of your need."
                         android:textColor="#47146C"
                         android:textStyle="bold"
                         android:textAlignment="center"
                         android:gravity="center"
-                        android:id="@+id/txt_trs"
-                        android:layout_below="@id/txt_head2"/>
-                    <HorizontalScrollView
-                        android:layout_width="match_parent"
+                        android:id="@+id/txt_head2line" />
+                    <Button
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/txt_trs">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/ui_button_design"
-                                android:text="JEE MAIN"
-                                android:layout_marginTop="10dp"
-                                android:id="@+id/btn_s1"
-                                android:layout_alignParentLeft="true"
-                                android:textColor="#1B2441"/>
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/ui_button_design"
-                                android:text="CAT"
-                                android:textColor="#1B2441"
-                                android:id="@+id/btn_s2"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginLeft="10dp"
-                                />
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/ui_button_design"
-                                android:text="CLAT"
-                                android:textColor="#1B2441"
-                                android:id="@+id/btn_s3"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginLeft="10dp"
-                                />
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/ui_button_design"
-                                android:text="NEET"
-                                android:textColor="#1B2441"
-                                android:id="@+id/btn_s4"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginLeft="10dp"
-                                />
+                        android:id="@+id/bot69"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ui_button_design"
+                        android:layout_gravity="center"
+                        android:textColor="#1B2441"
+                        android:padding="5dp"
+                        android:text="Let's go!"
+                        />
 
-
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/ui_button_design"
-                                android:text="VITEEE"
-                                android:textColor="#1B2441"
-                                android:layout_marginTop="10dp"
-                                android:id="@+id/btn_s5"
-                                android:layout_marginLeft="10dp"/>
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/ui_button_design"
-                                android:text="BITSAT"
-                                android:textColor="#1B2441"
-                                android:id="@+id/btn_s6"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginLeft="10dp"
-                                />
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/ui_button_design"
-                                android:text="MET"
-                                android:textColor="#1B2441"
-                                android:id="@+id/btn_s7"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginLeft="10dp"
-                                />
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/ui_button_design"
-                                android:text="GATE"
-                                android:textColor="#1B2441"
-                                android:id="@+id/btn_s8"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginLeft="10dp"
-                                />
-                        </LinearLayout>
-
-                    </HorizontalScrollView>
-
-                </RelativeLayout>
-
+                </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>

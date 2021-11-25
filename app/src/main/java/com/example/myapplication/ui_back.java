@@ -7,10 +7,14 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,23 +32,35 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ui_back extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    TextView tv1, usrhd1;
-    Button bt1, bt2, bt3, bt4, fdbc;
+    TextView tv1, usrhd1,gthp;
+    Button bt1, bt2, bt3, bt4, fdbc,comp;
     DrawerLayout dl;
     NavigationView ngv;
     Toolbar tlb;
     SearchView scv;
-    String ab = "com.example.myapplication";
-    String cd, nm1;
+    ListView lcv;
+    ListViewAdapter lv;
+    String nm1;
+    FirebaseFirestore fd;
     RatingBar rt;
-
+    List<String> list;
+    String[] abc;
+    ArrayList<CollegeNames> arrayList=new ArrayList<CollegeNames>();
+    ArrayList<String> help=new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +72,10 @@ public class ui_back extends AppCompatActivity implements NavigationView.OnNavig
         bt3 = (Button) findViewById(R.id.bot3);
         bt4 = (Button) findViewById(R.id.bot4);
         fdbc = (Button) findViewById(R.id.fdbck_btn);
+        comp=findViewById(R.id.bot69);
+        lcv=findViewById(R.id.listsug);
+        gthp=findViewById(R.id.get_help);
+
         /*this.getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
         getSupportActionBar().setCustomView(R.layout.custom_action_bar);
@@ -66,6 +86,43 @@ public class ui_back extends AppCompatActivity implements NavigationView.OnNavig
         ColorDrawable cd=new ColorDrawable(Color.parseColor("#F07D84"));
         ab.setBackgroundDrawable(cd);*/
         //color of custom action bar
+
+        fd=FirebaseFirestore.getInstance();
+        list=new ArrayList<>();
+
+        abc=new String[]{"IIT Bombay","IIT Delhi","IIT Guwahati","IIT Hyderabad","IIT Indore","IIT Kanpur","IIT Kharagpur","IIT Kharagpur Law","IIT Madras","IIT Roorkee","Lovely Professional University","NIT Trichy","NLSIU Bangalore","NLU Delhi","NLU Hyderabad"};
+
+
+        /*fd.collection("Colleges").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if(task.isSuccessful())
+                {
+                    for(QueryDocumentSnapshot document : task.getResult())
+                    {
+                        list.add(document.getId());
+                    }
+                    Log.d("success",list.toString());
+                }
+                else
+                {
+                    Log.d("fail inn adding doc", String.valueOf(task.getException()));
+                }
+            }
+        }); */   //this whole segment is used to extract all the name of colleges which is stored as document in a list
+
+        for (int i = 0; i < abc.length; i++) {
+            CollegeNames clgnm = new CollegeNames(abc[i]);
+            // Binds all list element into an array
+            arrayList.add(clgnm);
+        }
+        lv=new ListViewAdapter(this,arrayList);     //pass result to ListViewAdapter class
+        lcv.setAdapter(lv);   //binds adapter to list view
+
+        for(int j=0;j< abc.length;j++)
+        {
+            help.add(abc[j]);
+        }  //to add abc to arraylist so that it can be passed to get help class for display of college names
 
 
         dl = findViewById(R.id.cust_drawer_layout);
@@ -130,20 +187,46 @@ public class ui_back extends AppCompatActivity implements NavigationView.OnNavig
             }
         });
 
+        gthp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ioj=new Intent(ui_back.this,get_help.class);
+                ioj.putExtra("college_list",help);
+                startActivity(ioj);
+            }
+        });
+
 
         scv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 Intent ij = new Intent(getApplicationContext(), college_java.class);
                 ij.putExtra("college", query);
+                ij.putExtra("name",nm1);
                 startActivity(ij);
                 return true;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
-
+                String txt=newText;
+                lv.filter(txt);
+                if(newText.length()!=0)
+                {
+                    lcv.setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    lcv.setVisibility(View.GONE);
+                }
                 return false;   //whenever text changes , this func will be called
+            }
+        });
+        comp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nn=new Intent(ui_back.this,compare_college_java.class);
+                startActivity(nn);
             }
         });
     }
@@ -180,6 +263,12 @@ public class ui_back extends AppCompatActivity implements NavigationView.OnNavig
 
             case R.id.cust_abtus:
                 dialog();
+                break;
+
+            case R.id.wishlist:
+                Intent i3=new Intent(getApplicationContext(),wishlistpage.class);
+                i3.putExtra("name",nm1);
+                startActivity(i3);
                 break;
 
         }
@@ -242,6 +331,7 @@ public class ui_back extends AppCompatActivity implements NavigationView.OnNavig
                                 Toast.makeText(ui_back.this, "Successful Logout", Toast.LENGTH_SHORT).show();
                                 Intent i3 = new Intent(getApplicationContext(), homepage.class);
                                 startActivity(i3);
+                                finish();
 
                             }
                         });

@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#D9F2FE">
     <include layout="@layout/toolbar"
         android:id="@+id/cust_collg_toolbar"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/float1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#D9F2FE"
+        android:src="@drawable/heart"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/float2"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#D9F2FE"
+        android:src="@drawable/heart1"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:layout_below="@+id/cust_collg_toolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -100,21 +122,7 @@
                 android:textStyle="bold"/>
 
 
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/plcmnt"
-                android:backgroundTint="#00000000"
-                android:layout_marginTop="10dp"
-                android:id="@+id/plcmbt"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Placements"
-                android:gravity="center"
-                android:layout_marginTop="-15dp"
-                android:textSize="20dp"
-                android:textStyle="bold"/>
+
 
             <ImageButton
                 android:layout_width="match_parent"
@@ -137,4 +145,4 @@
 
     </ScrollView>
 
-</LinearLayout>
+</RelativeLayout>

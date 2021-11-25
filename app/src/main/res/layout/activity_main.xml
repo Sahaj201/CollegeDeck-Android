@@ -57,13 +57,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_weight="2"
-        android:padding="30dp">
+        android:padding="20dp">
 
         <EditText
             android:id="@+id/et7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:textColor="#F07D84"
             android:inputType="textPersonName"
             android:background="@drawable/et_style"
@@ -178,7 +177,6 @@
                 android:id="@+id/nutton5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:textColor="#1B2441"
                 android:layout_gravity="center"
                 android:backgroundTint="#01ADC4"

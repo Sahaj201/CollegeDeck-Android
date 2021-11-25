@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D9F2FE">
+    <include layout="@layout/toolbar"
+        android:id="@+id/cust_toolbarcomp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name of 1st college"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cg1"
+        android:background="@drawable/et_style2"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:ems="10"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name of 2st college"
+        android:layout_marginTop="15dp"
+        android:id="@+id/cg2"
+        android:background="@drawable/et_style2"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:ems="10"
+        android:inputType="text"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="GO"
+        android:layout_marginTop="10dp"
+        android:id="@+id/compbtn"
+        android:background="@drawable/ui_button_design"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+       <ScrollView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="College 1"
+                   android:textSize="25dp"
+                   android:gravity="center"
+                   android:textStyle="bold"
+                   android:background="#01ADC4"
+                   android:textColor="#1B2441"
+                   android:id="@+id/clghead1"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:textColor="#1B2441"
+                   android:padding="20dp"
+                   android:id="@+id/clgdet1"/>
+
+           </LinearLayout>
+       </ScrollView>
+
+        <TableRow android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"></TableRow>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="College 2"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#01ADC4"
+                    android:textColor="#1B2441"
+                    android:id="@+id/clghead2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#1B2441"
+                    android:padding="20dp"
+                    android:id="@+id/clgdet2"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

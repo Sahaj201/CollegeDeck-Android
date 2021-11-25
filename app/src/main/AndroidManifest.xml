@@ -20,9 +20,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".editprofile"
+        <activity android:name=".get_help"
+            android:parentActivityName=".ui_back"
+            android:label="@string/info"></activity>
+        <activity
+            android:name=".editprofile"
             android:label="@string/edit_profile"
-            android:parentActivityName=".ui_back"/>
+            android:parentActivityName=".ui_back" />
         <activity android:name=".verifyotp" />
         <activity android:name=".entermobile" />
         <activity android:name=".SplashActivity">
@@ -33,9 +37,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".homepage" />
-        <activity android:name=".college_java"
-            android:parentActivityName=".ui_back"
-            android:label="@string/college"/>
+        <activity
+            android:name=".college_java"
+            android:label="@string/college"
+            android:parentActivityName=".ui_back" />
         <activity
             android:name=".lawcolleges"
             android:label="@string/law"
@@ -56,6 +61,11 @@
         <activity
             android:name=".signup"
             tools:ignore="Instantiatable" />
+        <activity
+            android:name=".compare_college_java"
+            android:label="@string/college"
+            android:parentActivityName=".ui_back" />
+        <activity android:name=".wishlistpage" />
     </application>
 
 </manifest>

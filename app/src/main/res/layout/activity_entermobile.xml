@@ -17,12 +17,11 @@
 
     <ImageView android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_marginTop="10dp"
         android:src="@drawable/mob"/>
 
     <TextView android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:textColor="#D9F2FE"
         android:textStyle="bold"
         android:textSize="20dp"
@@ -31,15 +30,14 @@
     <TextView android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:textColor="#01ADC4"
         android:textStyle="bold"
         android:textSize="20dp"
         android:text="We will send you a OTP on this mobile number."
         android:layout_marginBottom="80dp"
         android:textAlignment="center"/>
-
-</LinearLayout>
+    </LinearLayout>
 
     <LinearLayout android:background="@drawable/et_style4"
         android:layout_height="wrap_content"

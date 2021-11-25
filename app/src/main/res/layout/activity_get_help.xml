@@ -4,27 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bottomsheet_fees"
+    tools:context=".get_help"
     android:orientation="vertical"
     android:background="#D9F2FE">
 
+    <include layout="@layout/toolbar"
+        android:id="@+id/cust_toolbar_gethelp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="FEE STRUCTURE"
-        android:textSize="35dp"
+        android:text="Following are the names of college whose information is stored in our database.Therefore, you are advised to search among these college only!"
+        android:textSize="15dp"
         android:gravity="center"
         android:textStyle="bold"
         android:background="#01ADC4"
         android:textColor="#1B2441"
         />
-    <TextView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Loading..."
-        android:textSize="25dp"
-        android:textColor="#1B2441"
-        android:padding="20dp"
-        android:id="@+id/clg_fees"/>
+        android:id="@+id/list_gethelp"/>
 
 </LinearLayout>
